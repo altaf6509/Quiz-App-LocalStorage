@@ -1,0 +1,34 @@
+[
+    {
+        "question": "What is 32 + 5 x 9 ?",
+        "choice1": "333",
+        "choice2": "169",
+        "choice3": "77",
+        "choice4": "343",
+        "answer": "3"
+    },
+    {
+        "question": "Which tag can be used to write JS code inside html?",
+        "choice1": "&lt;head&gt;",
+        "choice2": "&lt;javascript&gt;",
+        "choice3": "&lt;script&gt;",
+        "choice4": "&lt;title&gt;",
+        "answer": "3"
+    },
+    {
+        "question": "Which property of css is used to delay an action of animation in html?",
+        "choice1": "transition",
+        "choice2": "transform",
+        "choice3": "delay",
+        "choice4": "wait",
+        "answer": "1"
+    },
+    {
+        "question": "What is 10 + 6 / 2 * 5 ?",
+        "choice1": "40",
+        "choice2": "10.60",
+        "choice3": "10",
+        "choice4": "25",
+        "answer": "4"
+    }
+]

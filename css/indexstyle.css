@@ -1,0 +1,146 @@
+:root{
+    --highlight-color: hsla(193deg,50%,50%,100%);
+    --highlight-shadow-color: hsla(192deg,50%,70%,75%);
+    --highlight-border-color: hsla(191deg,55%,48%,75%);
+    --correct-answer-color: #28a745;
+    --incorrect-answer-color: #dc2545;
+    --default-text-color:#333;
+    --default-bg-color: #ecf5ff;
+    --bg-white: #ffffff;
+    background-color: var(--default-bg-color);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    color: var(--default-text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.1;
+    letter-spacing: 1.1;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10%;
+}
+
+#title{
+    font-size: 50px;
+    color: var(--highlight-color);
+    margin-bottom: 10px;
+}
+
+.btn{
+    color: var(--highlight-color);
+    background-color: var(--bg-white);
+    text-decoration: none;
+    text-align: center;
+    width: 15%;
+    margin-top: 18px;
+    border: 1.5px solid var(--highlight-border-color);
+    font-size: 18px;
+    border-radius: 1px;
+    height: 50px;
+    padding-top: 15px;
+}
+
+.btn:hover{
+    box-shadow: 0 0.4px 0 1.4px var(--highlight-shadow-color);
+    transform: translateY(1.5%);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover{
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+#inputBox{
+    box-sizing: none;
+    color:var(--highlight-color);
+    background-color: var(--bg-white);
+    text-decoration: none;
+    text-align: center;
+    width: 30%;
+    border: 1.5px solid var(--highlight-border-color);
+    font-size: 18px;
+    border-radius: 1px;
+    height: 50px;
+    padding: 15px;
+}
+
+.highscore{
+    font-weight: bold;
+    min-width: 20%;
+    float:left;
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--highlight-color);
+}
+
+#scoreList{
+    width: 80%;
+    margin-left: 62%;
+    list-style: none;
+}
+
+#scoreList li{
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--highlight-color);
+    font-size: 30px;
+    margin: 2% 0 1% 0;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+::placeholder{
+    font-size: 15px;
+    text-align: center;
+    opacity: 0.5;
+}
+
+@media(min-width: 1537px){
+    .container{
+        margin-top: 15%;
+    }
+    .btn{
+        width: 18%;
+    }
+    #inputBox{
+        width: 18%;
+    }
+}
+
+@media(max-width: 1536px){
+    .container{
+        margin-top: 15%;
+    }
+    .btn {
+        width: 20%;
+    }
+    #inputBox{
+        width: 20%;
+    }
+}
+
+@media(max-width: 1024px){
+    .btn {
+        width: 30%;
+    }
+    #inputBox{
+        width: 30%;
+    }
+}
+
+@media(max-width: 768px){
+    .btn {
+        width: 40%;
+    }
+    #inputBox{
+        width: 40%;
+    }
+}
