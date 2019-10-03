@@ -91,7 +91,7 @@
 #scoreList li{
     font-family: 'Courier New', Courier, monospace;
     color: var(--highlight-color);
-    font-size: 30px;
+    font-size: 1.3rem;
     margin: 2% 0 1% 0;
     font-weight: bold;
     text-transform: uppercase;
@@ -142,5 +142,12 @@
     }
     #inputBox{
         width: 40%;
+    }
+    #scoreList{
+        width: 100%;
+    }
+    #scoreList li{
+        font-size: 1rem;
+        margin: 2% 0 1% 0;
     }
 }
